@@ -1,0 +1,135 @@
+body {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: auto;
+    background-image: url("images/galaxy_background.jpg")
+}
+
+h1, h2, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+ul, li, p, a {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header {
+    text-align: center;
+    margin: 50px;
+    color: lightgreen;
+}
+
+header h1, header h2 {
+    padding: 5px;
+}
+
+#banner {
+    margin: auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
+    /*background-color: white;*/
+}
+
+#banner div #head {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: bounce 10s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        left: 50%;
+        bottom: calc(50% - 75px);
+    }
+    25% {
+        left: calc(100% - 50px);
+        bottom: 70%;
+    }
+    50% {
+        left: 50%;
+        bottom: -20%;
+    }
+    75% {
+        left: calc(0% - 50px);
+        bottom: 50%;
+    }
+    100% {
+        left: 50%;
+        bottom: calc(50% - 75px);
+    }
+}
+
+#banner div #earth {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+#banner div #moon {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main h2 {
+    padding: 20px 0px;
+}
+
+main section {
+    background-image: url("images/door.svg");
+    background-repeat: no-repeat;
+    /*background-color: #8196A3;*/
+    width: 225px;
+    margin: 10px;
+    padding: 100px 50px;
+}
+
+main section:hover {
+    transform: scale(1.25);
+}
+
+main section ul {
+    list-style-type: none;
+}
+
+main section ul li {
+    padding: 10px 0px;
+}
+
+main section ul li a {
+    padding: 10px 0px;
+    color: black;
+}
+
+main section ul li a:hover {
+    background-color: lightgreen;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    text-align: center; 
+}
+
+footer p a {
+    padding: 10px;
+    color: lightgreen;
+}
+
+footer p a:hover {
+    background-color: gray;
+}
