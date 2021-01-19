@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exp: DOM</title>
+</head>
+<body>
+    <h1>Fortune Cookie Generator</h1>
+
+    <p>If your number matches mine, I will grant you good luck ;)</p>
+
+    <script>
+    /* This program takes a number from 1-10 from the user and prints a randomized fortune from the fortunes array. If the user number and program generated number match, it prints a special message. */
+
+        var fortunes = ["", "You will meet someone new today.","You will pass DES 157.", "You will receive a package soon.", "Tonight will be an all-nighter.", "You will do something out of your comfort zone.", "You will leave something behind.", "An old friend will text you.", "You won't leave your house today.", "You will graduate on time.", "You will see things from another perspective."];
+
+        function randomNum(min, max){
+            var numValues = max - min + 1;
+            var randomNum = Math.random() * numValues;
+            var finalValue = Math.floor(randomNum) + min;
+            return finalValue;
+        }
+
+        function fate(){
+            var userNum = prompt("What's your fate? Give me a number from 1-10.", "");
+
+            if (userNum == randomNum(1,10)){
+                console.log("Congrats, your number matches mine! Seems to me you have a lot of good luck after all. Have a nice day! :)");
+            }
+
+            else if (userNum == null){
+                console.log("You're no fun :(")
+            }
+
+            else if (userNum < 1 || userNum > 10){
+                console.log("That number isn't from 1-10. Try again.");
+            }
+
+            else {
+                console.log(fortunes[randomNum(1,10)]);
+            }
+        }
+
+        fate();
+        
+    </script>
+</body>
+</html>
