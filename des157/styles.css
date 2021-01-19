@@ -104,9 +104,6 @@ main section ul {
     list-style-type: none;
 }
 
-main section ul li {
-    margin: 5px 0px;
-}
 
 main section ul li a {
     padding: 10px 0px;
