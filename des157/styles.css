@@ -105,11 +105,12 @@ main section ul {
 }
 
 main section ul li {
-    padding: 10px 0px;
+    margin: 5px 0px;
 }
 
 main section ul li a {
     padding: 10px 0px;
+    display: inline-block;
     color: black;
 }
 
