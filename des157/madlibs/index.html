@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Mad Lib Script</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bar 4 Bar</h1>
+    </header>
+
+    <main>
+
+        <p>Do you ever find yourself in a situation where you need to rap battle your friend but can't come up with fire bars?</p>
+
+        <p>Not to worry homie, we got you covered. Just gimmie a few words to work with, and I'll do the rest.</p>
+
+
+        <form id ="myform" action="processor.php" method="POST">
+            <label for="adj">Give me an adjective</label>
+            <input type="text" id="adj" required>
+
+            <label for="adjrhyme">Give me a noun that rhymes with the adjective you just entered</label>
+            <input type="text" id="adjrhyme" required>
+
+    
+            <label>Awesome, now I need a noun</label>
+            <input type="text" id="noun" required>
+
+            <label>Alright last one, give me a word that rhymes with the noun you just entered</label>
+            <input type="text" id="nounrhyme" required>
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <article id="madlib"></article>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
