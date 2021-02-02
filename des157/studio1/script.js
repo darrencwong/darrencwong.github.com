@@ -17,13 +17,13 @@
 
         let verse;
 
-        const line1 = ["Walk around with all this ice, you thinking I'm ", "Watch me flow, you can't be this ", "Straight outta college, now I'm so "];
+        const line1 = ["Walk around with all this ice, you thinking its ", "Watch me flow, you can't be this ", "Straight outta college, now I'm so "];
         
-        const line2 = ["This is a wise investment man, don't be a ", "Listen to the king, I'm such a ", "Boutta flex at my interview with a "];
+        const line2 = ["This a wise investment man, I shop at the ", "I'm the king of my city, I come from ", "Boutta flex at my interview then go to the "];
 
         const line3 = ["So talented just like I'm a ", "Y'all can't compete, even with a ", "Hop in the whip, skrt out with my "]
 
-        const line4 = ["Don't mess with me bro or you gon see me ", "Can't listen to you clowns, I'm boutta go ", "If you see me in the streets, don't start " ]
+        const line4 = ["Don't mess with me bro or you gon see me ", "Can't listen to you clowns, I'm boutta ", "If you see me in the streets, make sure to " ]
         
         if (userAdj && userAdjRhyme && userNoun && userNounRhyme){
             function randomInt(max) {
