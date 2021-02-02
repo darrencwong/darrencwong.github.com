@@ -21,7 +21,7 @@
         
         const line2 = ["This a wise investment man, I shop at the ", "I'm the king of my city, I come from ", "Boutta flex at my interview then go to the "];
 
-        const line3 = ["So talented just like I'm a ", "Y'all can't compete, even with a ", "Hop in the whip, skrt out with my "]
+        const line3 = ["Most days, I be lookin like a ", "Y'all can't compete, even with a ", "Hop in the whip, skrt out with my "]
 
         const line4 = ["Don't mess with me bro or you gon see me ", "Can't listen to you clowns, I'm boutta ", "If you see me in the streets, make sure to " ]
         
