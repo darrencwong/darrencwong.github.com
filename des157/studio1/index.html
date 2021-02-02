@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Mad Lib Script</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>HIP HOP BOPZ</h1>
+    </header>
+
+    <main>
+        <div>
+            <img id="head" src="images/head.svg" alt="head" width="300px">
+        </div>
+
+        <section id="intro">
+            <p>Yo homie, need some fire bars?</p>
+
+            <p>Don't worry bro, I got you. Gimmie a few words to work with, and I'll do the rest.</p>
+        </section>
+        
+
+        <form id = "myform" action="processor.php" method="POST">
+            <label for="name">Your Rap Name</label>
+            <input type="text" id="name" required>
+
+
+            <label for="adj">An adjective</label>
+            <input type="text" id="adj" required>
+
+            <label for="adjrhyme">A noun that rhymes with the  previous adjective</label>
+            <input type="text" id="adjrhyme" required>
+
+    
+            <label>A noun</label>
+            <input type="text" id="noun" required>
+
+            <label>A verb that rhymes with the previous noun</label>
+            <input type="text" id="nounrhyme" required>
+
+
+            <input type="submit" id="submit" value="Let's Go!">
+        </form>
+
+
+        <article id="madlib" class = "invisible"></article>
+
+    </main>
+
+    <footer>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+    </footer>
+</body>
+</html>
