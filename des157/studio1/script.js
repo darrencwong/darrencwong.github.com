@@ -21,9 +21,9 @@
         
         const line2 = ["This is a wise investment man, don't be a ", "Listen to the king, I'm such a ", "Boutta flex at my interview with a "];
 
-        const line3 = ["So talented just like a ", "Y'all can't compete, even with a ", "Hop in the whip, skrt out with my "]
+        const line3 = ["So talented just like I'm a ", "Y'all can't compete, even with a ", "Hop in the whip, skrt out with my "]
 
-        const line4 = ["Don't mess with me bro or I'm gonna ", "Can't listen to you clowns, I'm boutta ", "If you see me in the streets, don't start " ]
+        const line4 = ["Don't mess with me bro or you gon see me ", "Can't listen to you clowns, I'm boutta go ", "If you see me in the streets, don't start " ]
         
         if (userAdj && userAdjRhyme && userNoun && userNounRhyme){
             function randomInt(max) {
