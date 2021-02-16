@@ -1,0 +1,159 @@
+h1, h2, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    padding-bottom: 50px;
+}
+
+body {
+    background-color: lightblue;
+    margin: 100px;
+}
+header {
+    position: fixed;
+    top: 250px;
+    left: 150px;
+    width: 400px;
+}
+
+header h1 {
+    font-size: 80px
+}
+
+main {
+    min-width: 300px;
+    max-width: 1400px;
+    position: relative;
+}
+
+main img {
+    position: absolute;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+#kaws {
+    top: 0px;
+    right: 200px;
+    transform: rotate(-30deg)
+}
+
+#gordon {
+    top: 200px;
+    right: 0;
+    transform: rotate(30deg);
+}
+
+#kellymoore {
+    top: 450px;
+    right: 300px;
+    transform: rotate(-80deg);
+}
+
+#gymkhana {
+    top: 750px;
+    right: 0px;
+}
+
+#murakami {
+    top: 1000px;
+    right: 250px;
+    transform: rotate(-50deg);
+}
+
+#basquiat {
+    top: 1200px;
+    right: 0px;
+    transform: rotate(20deg);
+}
+
+main img:hover {
+    cursor: pointer;
+}
+
+.showing {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay article {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 50px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    border-radius: 30px;
+}
+
+.overlay h2 {
+    font-size: 60px;
+}
+
+.overlay article img {
+    width: 500px;
+    align-self: center;
+    margin: 50px;
+}
+
+.x {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+footer {
+    width: 300px;
+    position: fixed;
+    left: 150px;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+footer p a {
+    padding: 10px;
+    color: black;
+}
+
+footer p a:hover {
+    background-color: white;
+}
