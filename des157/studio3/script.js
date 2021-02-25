@@ -6,6 +6,9 @@
     var score = document.getElementById('score');
     var actionArea = document.getElementById('actions');
 
+    const rollSound = new Audio('sounds/roll.mp3');
+    const incorrectSound = new Audio('sounds/incorrect.mp3');
+
     var gameData = {
         dice: ['1die.png', '2die.png', '3die.png', 
         '4die.png', '5die.png', '6die.png'],
@@ -25,6 +28,8 @@
 
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();
+            /* Not sure why this doesn't play */
+            incorrectSound.play();
         });
 
         gameControl.removeAttribute("class");
@@ -34,7 +39,6 @@
 
         actionArea.className = "center";
 
-        console.log(gameData.index);
         setUpTurn();
     });
 
@@ -43,6 +47,7 @@
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
             throwDice();
+            rollSound.play();
         });
     };
 
@@ -77,11 +82,14 @@
 
             document.getElementById('rollagain').addEventListener('click', function(){
                 throwDice();
+                /* Not sure why this doesn't play */
+                rollSound.play();
             });
             document.getElementById('pass').addEventListener('click', function(){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
                 actionArea.className = "center";
+                incorrectSound.play();
             });
 
             checkWinningCondition();                
