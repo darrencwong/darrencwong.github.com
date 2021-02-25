@@ -1,0 +1,116 @@
+h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Londrina Solid', cursive;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+p, button {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    min-width: 800px;
+    max-width: 1200px;
+    padding-top: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+header {
+    padding: 50px;
+    width: 400px;
+}
+
+header h1 {
+    padding-bottom: 50px;
+}
+
+header p {
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 50px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    border-radius: 30px;
+}
+
+button { 
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #69387F;
+    color: white;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#gamecontrol {
+    text-align: center;
+    position: absolute;
+    right: 50px;
+}
+
+#game {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#game img {
+    margin-bottom: 50px;
+}
+
+#actions {
+    position: absolute;
+}
+
+#score {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFDE17;
+}
+
+#score p {
+    font-size: 24px;
+}
