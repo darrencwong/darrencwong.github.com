@@ -80,7 +80,7 @@ header h1, header h2 {
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 main h2 {
@@ -90,9 +90,9 @@ main h2 {
 main section {
     background-image: url("images/door.svg");
     background-repeat: no-repeat;
-    width: 225px;
-    margin: 10px;
-    padding: 50px 50px 100px;
+    background-position: center;
+    width: 200px;
+    padding: 50px 50px 150px;
     transition: transform .5s ease;
 }
 
