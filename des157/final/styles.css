@@ -65,12 +65,11 @@ footer p a:hover {
 /* Comp and Refined Comp Styling */
 .comp {
     min-width: 800px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
 .comp img {
-    max-width: 100%;
-    height: auto;
-    margin: 50px;
+    width: 100%;
+    margin: 50px 0;
 }
