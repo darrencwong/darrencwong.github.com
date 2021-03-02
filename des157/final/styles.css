@@ -1,4 +1,5 @@
-body {
+/* Project Brief Styling */
+#projectbrief {
     min-width: 300px;
     max-width: 800px;
     margin: auto;
@@ -56,4 +57,20 @@ footer p a {
 footer p a:hover {
     background-color: black;
     color: white;
+}
+
+
+
+
+/* Comp and Refined Comp Styling */
+.comp {
+    min-width: 800px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.comp img {
+    max-width: 100%;
+    height: auto;
+    margin: 50px;
 }
