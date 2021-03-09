@@ -144,6 +144,8 @@
         let yPos = "";
         img.addEventListener("mouseover", function(event){
             event.preventDefault();
+            img.style.zIndex = "5";
+            img.style.transition = "";
             bodyLocate.style.backgroundColor = `${backgroundColors[i]}`;
             bodyLocate.style.transition = "all 1s ease";
             h2Locate[i].className = "showing";
@@ -161,6 +163,7 @@
         });
         img.addEventListener("mouseout", function(event){
             event.preventDefault();
+            img.style.zIndex = "";
             h2Locate[i].className = "hidden";
         })
     };
@@ -178,7 +181,7 @@
                 img.style.transition = "all 1.5s ease";
                 img.style.top = "";
                 img.style.left = "";
-                articleLocate[i].style.transform = "translate(2150px, 0)";
+                articleLocate[i].style.transform = "translate(2150px, 0)";x
             };
         });
     };
