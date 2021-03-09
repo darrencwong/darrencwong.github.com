@@ -42,7 +42,7 @@
 
 
     const articleLocate = document.querySelectorAll("article");
-    const sectionLocate = document.querySelector("section");
+    const infoLocate = document.getElementById("info");
 
     /* Listens for user vertical scroll position and returns it as pageTop. */
     window.addEventListener("scroll", function(){
@@ -60,7 +60,7 @@
             clickImg.style.left = "200px";
             clickImg.style.transition = "all 1.5s ease";
             clickImg.style.transitionDelay = "";
-            sectionLocate.style.top = `${pageTop}px`;
+            infoLocate.style.top = `${pageTop}px`;
             articleLocate[i].style.transform = "translate(-2650px, 0)";
             articleLocate[i].style.transition = "all 1.5s ease";
             for (otherImg of imgLocate){
