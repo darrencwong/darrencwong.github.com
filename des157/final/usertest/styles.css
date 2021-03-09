@@ -25,7 +25,7 @@ p {
 }
 
 body {
-    background-color: lightblue;
+    background-color: lightgray;
     margin: 20px;
 }
 
@@ -42,10 +42,39 @@ header h1 {
     font-size: 70px
 }
 
+#enter {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    animation: pulse 1.5s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#enter:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
 main {
     position: relative;
-/*     background-color: white; */
-    top: -2000px;
+    /* background-color: white; */
+    top: -2500px;
     width: 100%;
     height: 2000px;
 }
@@ -56,49 +85,56 @@ main img {
     max-width: 500px;
 }
 
+main img:hover {
+    cursor: pointer;
+}
+
+#titles h2 {
+    position: absolute;
+    top: 0px;
+    z-index: 6;
+    font-size: 50px;
+}
+
 #kaws {
     top: 0px;
-    left: 50%;
+    left: 45%;
     transform: scale(1.5) rotate(-30deg);
     z-index: 5;
 }
 
 #gordon {
-    top: 200px;
+    top: 300px;
     left: 30%;
     transform: scale(1.5) rotate(30deg);
     z-index: 4;
 }
 
 #kellymoore {
-    top: 450px;
-    left: 50%;
+    top: 600px;
+    left: 45%;
     transform: scale(1.5) rotate(-80deg);
     z-index: 3;
 }
 
 #gymkhana {
-    top: 750px;
-    left: 40%;
+    top: 850px;
+    left: 35%;
     z-index: 2
 }
 
 #murakami {
-    top: 1000px;
+    top: 1200px;
     left: 40%;
     transform: rotate(-50deg);
     z-index: 1
 }
 
 #basquiat {
-    top: 1200px;
-    left: 40%;
+    top: 1500px;
+    left: 35%;
     transform: rotate(20deg);
     z-index: 0;
-}
-
-main img:hover {
-    cursor: pointer;
 }
 
 .showing {
@@ -109,38 +145,18 @@ main img:hover {
     display: none;
 }
 
-.overlay {
+#info {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top:0;
-    left:0;
-    width: 100vw;
+    top: 0;
+    right: -2500px;
+    width: 40%;
     height: 100vh;
 }
 
-.overlay article {
-    display: flex;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    background-color: white;
-    padding: 50px;
-    width: 80vw;
-    height: 80vh;
+#info article {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
-    border-radius: 30px;
-}
-
-.overlay h2 {
-    font-size: 60px;
-}
-
-.overlay article img {
-    align-self: center;
-    margin: 50px;
+    top: 25%;
+    /* transform: translate(-50%, -50%); */
 }
 
 .x {
@@ -158,13 +174,13 @@ main img:hover {
 }
 
 footer {
-    width: 300px;
+    width: 80%;
     position: fixed;
-    left: 150px;
+    left: 50%;
+    transform: translate(-50%, 50%);
     bottom: 50px;
     display: flex;
     justify-content: space-between;
-    z-index: -1;
 }
 
 footer p a {
