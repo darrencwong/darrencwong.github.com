@@ -73,3 +73,10 @@ footer p a:hover {
     width: 100%;
     margin: 50px 0;
 }
+
+/* User Testing Results Styling */
+#usertestresults {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
