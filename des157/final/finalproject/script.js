@@ -45,7 +45,7 @@
 
 
     /* Changes background color on image hover and shows hover title, which follows user mouse movement*/
-    const backgroundColors = ["lightcoral", "goldenrod", "lightblue", "lightpink", "lightgreen", "lightblue"];
+    const backgroundColors = ["#93CC93", "#EA6374", "#EBD44E", "#ACBCC1", "#7DC1D3", "#BD9DCA"];
     const h2Locate = document.querySelectorAll("#titles h2");
 
     let xPos;
