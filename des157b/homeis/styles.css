@@ -13,11 +13,11 @@ a {
 
 body {
     background-color: white;
-    transition: all 2s;
+    transition: all 1.5s;
 }
 
 body.switch {
-    background-color: #333;
+    background-color: rgb(24, 24, 24);
     color: rgb(235, 235, 235);
 }
 
@@ -74,20 +74,30 @@ button.switch {
 
 button.switch:hover {
     background-color: #00FF00;
-    color: #333;
+    color: rgb(24, 24, 24);
 }
 
 #banner {
     max-width: 1110px;
     height: 100%;
     margin: auto;
+    filter: hue-rotate(180deg);
+    transition: all 1s;
+}
+
+#banner:hover {
+    filter: none;
 }
 
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
+    filter: hue-rotate(90deg);
+    transition: all 1s;
 }
+
+#banner.switch:hover {
+    filter: none;
+}
+
 
 main {
     display: flex;
@@ -114,7 +124,7 @@ ol, ul {
 }
 
 #final {
-    border: 2px solid #333;
+    border: 2px solid rgb(24, 24, 24);
     border-radius: 20px;
     box-sizing: border-box;
     padding: 2em;
@@ -138,7 +148,7 @@ section a {
 
 section a:hover {
     background-color: orange;
-    color: #333;
+    color: rgb(24, 24, 24);
 }
 
 section.switch a {
@@ -147,5 +157,5 @@ section.switch a {
 
 section.switch a:hover {
     background-color: yellow;
-    color: #333;
+    color: rgb(24, 24, 24);
 }

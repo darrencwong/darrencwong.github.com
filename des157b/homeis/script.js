@@ -26,4 +26,22 @@
             mode = 'light'
         }
     })
+
+    const myImages = ['images/header_light.jpg', 'images/header_dark.jpg'];
+    let currentImage = 0;
+
+    document.querySelector('button').addEventListener('click', switchPhoto);
+
+    function switchPhoto() {
+        if (currentImage == 1) {
+            currentImage = 0;
+            document.getElementById('bannerimage').src = myImages[currentImage];
+        }
+
+        else {
+            currentImage++;
+            document.getElementById('bannerimage').src = myImages[currentImage];
+        }
+    }
+
 })()
