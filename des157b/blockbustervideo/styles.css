@@ -1,0 +1,97 @@
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.showing {
+    opacity: 1;
+    transition: all 2s;
+}
+
+#myvideo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(2px) saturate(110%);
+}
+
+.fa-volume-up {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-volume-mute {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /*why does position relative stretch to full page width?*/
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#line1, #line3 {
+    left: 0;
+    top: 0;
+    transition: ease-out 2s;
+}
+
+#line2, #line4 {
+    left: 0;
+    bottom: 50px;
+}
+
+#think {
+    z-index: 3;
+}
+
+#time {
+    z-index: 2;
+}
+
+#spending {
+    z-index: 1;
+}
+
+#in, #head {
+    z-index: 0;
+}
+    
+
+div {
+    font-size: 36px;
+    font-family: 'Lexend Tera', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+#think, #time, #spending, #in, #head {
+    font-family: 'Alex Brush', cursive;
+    font-size: 96px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+}
