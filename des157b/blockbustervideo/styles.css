@@ -40,6 +40,31 @@ body {
     cursor: pointer;
 }
 
+.fa-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: antiquewhite;
+    transform: translate(-50%, -50%);
+    animation: spin 2s infinite alternate ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        opacity: .5;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    100% {
+        opacity: .5;
+        transform: rotate(360deg);
+    }
+}
+
 section {
     display: flex;
     flex-wrap: wrap;

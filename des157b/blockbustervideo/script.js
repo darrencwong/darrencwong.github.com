@@ -3,12 +3,14 @@
 
     const myVideo = document.getElementById('myvideo');
     const volume = document.querySelector('.fa-volume-mute');
+    const loading = document.querySelector('.fa-spinner');
 
     const words = document.querySelectorAll('div');
 
     const cursiveWord = [words[1], words[4], words[6], words[8], words[10]];
 
     const images = document.querySelectorAll('img');
+
 
     volume.addEventListener('click', function(){
         if (!myVideo.muted) {
@@ -21,6 +23,10 @@
         }
     });
 
+
+    myVideo.addEventListener('playing', function() {
+        loading.style.display = 'none';
+    });
 
 
     const times = {
