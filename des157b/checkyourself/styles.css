@@ -1,10 +1,46 @@
-#time {
-    font-size: 96px;
+p, div, section {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background-color: #141414;
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    /* Top postion property doesn't work, can't vertically center */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+}
+
+#time {
+    font-size: 120px;
+    font-family: 'Cute Font', cursive;
 }
 
 .fa-instagram-square {
     font-size: 36px;
-    color: orange;
+    color: #fbad50;
     position: absolute;
-};
+}
+
+.fa-youtube {
+    position: absolute;
+    color: red;
+    font-size: 36px;
+}
+
+.fa-comment {
+    position: absolute;
+    color: lightgreen;
+    font-size: 36px;
+}
