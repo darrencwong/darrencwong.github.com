@@ -1,0 +1,120 @@
+h1, h2, p, div {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body {
+    max-width: 1366px;
+    margin: auto;
+    background-image: linear-gradient(gray, white, gray);
+    height: 768px;
+}
+
+#basicInfo {
+    margin-top: 100px;
+}
+
+#basicInfo h1 {
+    font-size: 48px;
+}
+
+#age {
+    font-size: 48px;
+}
+
+#yearsold {
+    font-size: 24px;
+}
+
+#sideContent {
+    margin: 0 70px;
+}
+
+#personality {
+    display: flex;
+    justify-content: space-between;
+}
+
+#interestsSection {
+    margin-top: 100px;
+}
+
+#interestsSection h1{
+    margin-bottom: 20px;
+}
+
+/* section {
+    margin-top: 50px;
+} */
+
+#interests p {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #EF8C0B;
+    display: inline-block;
+}
+
+.bar {
+    width: 300px;
+    height: 15px;
+    position: relative;
+    margin: 10px 0 40px 0;
+}
+
+/* .slidecontainer {
+    position: relative;
+} */
+
+#centerContent {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0%;
+    height: 100%;
+    width: 25%;
+
+}
+
+.character {
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 250px;
+}
+
+/* #oval {
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+} */
+
+#slideContainer {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+#mySlider {
+    width: 200px;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+
+/* div {
+    margin-bottom: 70px;
+} */
+/* .ldBar path.mainline {
+  stroke-width: 10;
+  stroke: orange;
+  stroke-linecap: round;
+}
+.ldBar path.baseline {
+  stroke-width: 10;
+  stroke: #f1f2f3;
+  stroke-linecap: round;
+} */

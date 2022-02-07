@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library Liberty</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <script src="script.js" defer></script>
+    <script src="progressbar.js"></script>
+    <script src="progressbar.min.js"></script>
+
+    <!-- <style type="text/css">
+        div {
+            margin-bottom: 70px;
+        }
+        .ldBar path.mainline {
+          stroke-width: 10;
+          stroke: orange;
+          stroke-linecap: round;
+        }
+        .ldBar path.baseline {
+          stroke-width: 10;
+          stroke: #f1f2f3;
+          stroke-linecap: round;
+        }
+    </style> -->
+</head>
+
+<body>
+    <section id="sideContent">
+        <section id="basicInfo">
+            <h1>D-DUB</h1>
+            <h2 class="animate__animated animate__flipInX" id="age">10<span id="yearsold"> yrs old</span></h2>
+            
+        </section>
+
+        <div id="personality">
+            <section id="interestsSection">
+                <h1>Interests</h1>
+                <div id="interests">
+                    <p>Cars</p>
+                    <p>Trains</p>
+                    <p>Video Games</p>
+                </div>
+            </section>
+        
+            <section id="attributes">
+                <label class="label">Height</label>
+                <div class="bar" id="heightBar"></div>
+
+                <label class="label">Confidence</label>
+                <div class="bar" id="confidenceBar"></div>
+
+                <label class="label">Knowledge</label>
+                <div class="bar" id="knowledgeBar"></div>
+
+                <label class="label">Resilience</label>
+                <div class="bar" id="resilienceBar"></div>
+            </section>
+        </div>
+    </section>
+
+    <section id="centerContent">
+        <div id="imageContainer">
+            <img class="character" src="media/me_10.png" alt="figure illustration of kid" width="80%">
+        </div>
+        
+        <div id="slideContainer">
+            <input type="range" min="0" max="100" value="0" class="slider" step="33.33" id="mySlider">
+        </div>
+    </section>
+
+</body>
+</html>
