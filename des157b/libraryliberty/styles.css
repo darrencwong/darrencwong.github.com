@@ -1,12 +1,12 @@
 h1, h2, p, div {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin: 0;
 }
 
 body {
     max-width: 1366px;
     margin: auto;
-    background-image: linear-gradient(gray, white, gray);
+    background-image: linear-gradient(#d0d0d0 10%, #b5b5b5, #d0d0d0 40%, gray, #262626 90%);
     height: 768px;
 }
 
@@ -15,7 +15,10 @@ body {
 }
 
 #basicInfo h1 {
-    font-size: 48px;
+    font-size: 64px;
+    font-family: 'Faster One', cursive;
+    margin-bottom: 20px;
+    height: 70px;
 }
 
 #age {
@@ -43,10 +46,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* section {
-    margin-top: 50px;
-} */
-
 #interests p {
     padding: 15px;
     border-radius: 30px;
@@ -61,10 +60,6 @@ body {
     margin: 10px 0 40px 0;
 }
 
-/* .slidecontainer {
-    position: relative;
-} */
-
 #centerContent {
     position: absolute;
     left: 50%;
@@ -72,25 +67,15 @@ body {
     top: 0%;
     height: 100%;
     width: 25%;
-
 }
 
 .character {
     position: absolute;
     bottom: 20%;
     z-index: 1;
-    left: 50%;
-    transform: translate(-50%);
+    left: 13%;
     max-width: 250px;
 }
-
-/* #oval {
-    height: 50px;
-    width: 300px;
-    background-color: white;
-    border-radius: 50%;
-    margin: auto;
-} */
 
 #slideContainer {
     position: absolute;
@@ -103,18 +88,3 @@ body {
     display: block;
     margin: 50px auto 0 auto;
 }
-
-
-/* div {
-    margin-bottom: 70px;
-} */
-/* .ldBar path.mainline {
-  stroke-width: 10;
-  stroke: orange;
-  stroke-linecap: round;
-}
-.ldBar path.baseline {
-  stroke-width: 10;
-  stroke: #f1f2f3;
-  stroke-linecap: round;
-} */

@@ -3,7 +3,7 @@
         "interests": {
             "1": "Cars",
             "2": "Trains",
-            "3": "Video Games"
+            "3": "Drawing"
         },
         "age": "10",
         "height": "40",
@@ -16,7 +16,7 @@
         "interests": {
             "1": "Ken Block",
             "2": "Cars",
-            "3": "Video Games"
+            "3": "Racing Games"
         },
         "age": "13",
         "height": "60",
@@ -28,11 +28,11 @@
     "50-75": {
         "interests": {
             "1": "Sneakers",
-            "2": "Design",
-            "3": "Youtube"
+            "2": "Art",
+            "3": "Hip Hop"
         },
         "age": "17",
-        "height": "80",
+        "height": "90",
         "confidence": "30",
         "knowledge": "70",
         "resilience": "40"
@@ -42,11 +42,10 @@
         "interests": {
             "1": "Sneakers",
             "2": "Streetwear",
-            "3": "Branding",
-            "4": "UI/UX"
+            "3": "Design"
         },
         "age": "21",
-        "height": "95",
+        "height": "100",
         "confidence": "70",
         "knowledge": "80",
         "resilience": "90"

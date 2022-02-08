@@ -5,22 +5,21 @@
 
     const slider = document.getElementById('mySlider');
     const age = document.getElementById('age');
-    const attributes = document.getElementById('attributes');
     const interests = document.getElementById('interests');
-    const myImages = ['<img class="character" src="media/me_10.png" alt="figure illustration of 10 year old me" width="80%">', '<img class="character" src="media/me_13.png" alt="figure illustration of 13 year old me" width="80%">'];
+    const myImages = ['<img class="character" src="media/me_10.png" alt="figure illustration of 10 year old me" width="80%">', '<img class="character" src="media/me_13.png" alt="figure illustration of 13 year old me" width="80%">', '<img class="character" src="media/me_17.png" alt="figure illustration of 17 year old me" width="80%">', '<img class="character" src="media/me_21.png" alt="figure illustration of 21 year old me" width="80%">'];
 
-    console.log(age);
 
+    // Gets data
     async function getData(){
         const myData = await fetch('data.json');
         const personalityData = await myData.json();
         globalData = Object.values(personalityData);
     };
     getData();
-    console.log(globalData);
+    console.log(globalData); 
+    // Not sure why global data is undefined globally
 
-    
-    // const ProgressBar = require('progressbar.js');
+
     const heightBar = new ProgressBar.Line('#heightBar', {
         strokeWidth: 15,
         easing: 'easeInOut',
@@ -58,8 +57,6 @@
         svgStyle: {width: '100%', height: '100%'},
         text: {
           style: {
-            // Text color.
-            // Default: same as stroke color (options.color)
             color: 'black',
             position: 'absolute',
             right: '0',
@@ -85,8 +82,6 @@
         svgStyle: {width: '100%', height: '100%'},
         text: {
           style: {
-            // Text color.
-            // Default: same as stroke color (options.color)
             color: 'black',
             position: 'absolute',
             right: '0',
@@ -112,8 +107,6 @@
         svgStyle: {width: '100%', height: '100%'},
         text: {
           style: {
-            // Text color.
-            // Default: same as stroke color (options.color)
             color: 'black',
             position: 'absolute',
             right: '0',
@@ -129,15 +122,17 @@
         }
     });
     
+
+    // Starting state of four bars
     heightBar.animate(40 / 100);
     confidenceBar.animate(60 / 100);
     knowledgeBar.animate(20 / 100);
     resilienceBar.animate(15 / 100);
+    // Not sure why globalData works in if statement but not outside if its a global variable
 
-    console.log(slider);
 
+    // Listens for change in slider and executes different code depending on what segment it's in
     slider.addEventListener('change', function(){
-        console.log(slider.value);
 
         if (slider.value == 0){
             heightBar.animate((globalData[0].height) / 100); // Number from 0.0 to 1.0);
@@ -150,31 +145,32 @@
             interests.innerHTML = `<p>${globalData[0].interests[1]}</p> <p>${globalData[0].interests[2]}</p> <p>${globalData[0].interests[3]}</p>`;
 
             document.getElementById('imageContainer').innerHTML = myImages[0];
+            document.querySelector('img').className += ' animate__animated animate__slideInRight';
+
+            document.querySelector('h1').style.fontFamily = "'Faster One', cursive";
         }
         
         if (slider.value > 0 && slider.value <= 33.33){
+            // Sets value for each of the four bars using data from json file
             heightBar.animate((globalData[1].height) / 100); 
             confidenceBar.animate((globalData[1].confidence) / 100);
             knowledgeBar.animate((globalData[1].knowledge) / 100);
             resilienceBar.animate((globalData[1].resilience) / 100); 
 
+            // Sets value for each of the four bars using data from json file
             age.innerHTML = `${globalData[1].age}<span id="yearsold"> yrs old</span>`;
 
+            // Sets interests from json data inside interest section
             interests.innerHTML = `<p>${globalData[1].interests[1]}</p> <p>${globalData[1].interests[2]}</p> <p>${globalData[1].interests[3]}</p>`;
 
+            // Sets corresponding illustration image with age and adds slideInRight animation
             document.getElementById('imageContainer').innerHTML = myImages[1];
-            
-            // const heightBar = new ldBar(".ldBar", {
-            //     "stroke": "#f1f2f3",
-            //     "stroke-width": 10,
-            //     "value": globalData[0].height
-            // });
-            // attributes.innerHTML = heightBar;
+            document.querySelector('img').className += ' animate__animated animate__slideInRight';
 
-            // const testBar = document.getElementById('testing');
-            // testBar.set(60);
+            // Changes font corresponding with age
+            document.querySelector('h1').style.fontFamily = "'Lacquer', cursive";
 
-            // attributes.innerHTML += `<div class="ldBar" data-value="${globalData[1].height}">Height</div> <div class="ldBar" data-value="${globalData[1].confidence}">Confidence</div> <div class="ldBar" data-value="${globalData[1].knowledge}">Knowledge</div> <div class="ldBar" data-value="${globalData[1].resilience}">Resilience</div>`;
+            // document.querySelector('h2').className = 'animate__animated animate__flipInX'; Couldn't get animation to work with every slider change even though I'm trying to replace class name with every if statement. Only works on page load because it's specified in html
         }
         
         else if (slider.value > 33.33 && slider.value <= 66.66){
@@ -187,6 +183,11 @@
             age.innerHTML = `${globalData[2].age}<span id="yearsold"> yrs old</span>`;
 
             interests.innerHTML = `<p>${globalData[2].interests[1]}</p> <p>${globalData[2].interests[2]}</p> <p>${globalData[2].interests[3]}</p>`;
+
+            document.getElementById('imageContainer').innerHTML = myImages[2];
+            document.querySelector('img').className += ' animate__animated animate__slideInRight';
+
+            document.querySelector('h1').style.fontFamily = "Helvetica, sans-serif";  
         }
 
         else if (slider.value > 66.66 && slider.value <= 100){
@@ -198,7 +199,12 @@
 
             age.innerHTML = `${globalData[3].age}<span id="yearsold"> yrs old</span>`;
 
-            interests.innerHTML = `<p>${globalData[3].interests[3]}</p> <p>${globalData[3].interests[2]}</p> <p>${globalData[1].interests[3]}</p>`;
+            interests.innerHTML = `<p>${globalData[3].interests[1]}</p> <p>${globalData[3].interests[2]}</p> <p>${globalData[3].interests[3]}</p>`;
+
+            document.getElementById('imageContainer').innerHTML = myImages[3];
+            document.querySelector('img').className += ' animate__animated animate__slideInRight';
+
+            document.querySelector('h1').style.fontFamily = "'Oswald', sans-serif";
         }
     });
 
