@@ -14,9 +14,6 @@ Parse.initialize("UeE3EwktcYnGGXQ5JYEibhGYbFgrFny8QD3CI3m5","nLGNA1jwo8FijrPqxAy
 // Parse server
 Parse.serverURL = 'https://parseapi.back4app.com/';
 
-const title = document.getElementById('title');
-const description = document.getElementById('description');
-
 document.querySelector('#upload').addEventListener('submit', function(event){
     event.preventDefault();
 
@@ -40,8 +37,9 @@ async function uploadPhoto(name, file){
     newPhoto.set('filename', name);
     newPhoto.set('file', new Parse.File(name, file));
     //This is a good place to save data from the other fields to the database
-    newPhoto.set('title', title);
-    newPhoto.set('description', description);
+    newPhoto.set('title', document.getElementById('title').value);
+    newPhoto.set('description', document.getElementById('description').value);
+    console.log(newPhoto, title, description)
 
     try {
       const result = await newPhoto.save();
