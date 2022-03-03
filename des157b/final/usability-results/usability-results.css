@@ -1,0 +1,32 @@
+body {
+    width: 700px;
+    margin: auto;
+    background-image: linear-gradient(to left, #baffc9, white);
+}
+
+h1, h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+.observations{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+img{
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+#update{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
